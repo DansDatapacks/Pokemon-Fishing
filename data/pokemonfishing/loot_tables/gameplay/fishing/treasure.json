@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/treasure/common",
+					"weight": 100,
+					"quality": -4
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/treasure/rare",
+					"weight": 25,
+					"quality": 2
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/treasure/ultra_rare",
+					"weight": 1,
+					"quality": 4
+				}
+			],
+			"rolls": 1.0
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"item": {
+					"items": ["minecraft:barrier"],
+					"nbt": "{PokemonFishing:{}}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "pokemonfishing:on_event/on_catch"
+	}
+}

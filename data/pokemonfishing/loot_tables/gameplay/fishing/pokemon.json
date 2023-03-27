@@ -1,0 +1,38 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon_rarity/very_common",
+					"weight": 300,
+					"quality": -4
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon_rarity/common",
+					"weight": 150,
+					"quality": -2
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon_rarity/uncommon",
+					"weight": 75
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon_rarity/rare",
+					"weight": 20,
+					"quality": 4
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon_rarity/ultra_rare",
+					"quality": 4
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cobblemon:iron"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "cobblemon:calcium"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "cobblemon:carbos"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "cobblemon:hp_up"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "cobblemon:protein"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "cobblemon:zinc"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "cobblemon:poke_ball"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "cobblemon:azure_ball"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "cobblemon:exp_candy_s"
+				}
+			],
+			"rolls": 1.0
+		}
+	]
+}

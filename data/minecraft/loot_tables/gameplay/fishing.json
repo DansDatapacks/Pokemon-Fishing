@@ -1,0 +1,41 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/junk",
+					"quality": -4,
+					"weight": 10
+				},
+				{
+					"type": "minecraft:loot_table",
+					"conditions": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"type_specific": {
+									"type": "fishing_hook",
+									"in_open_water": true
+								}
+							}
+						}
+					],
+					"name": "pokemonfishing:gameplay/fishing/treasure",
+					"quality": 4,
+					"weight": 5
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon",
+					"quality": 2,
+					"weight": 25
+				}
+			],
+			"rolls": 1.0
+		}
+	]
+}

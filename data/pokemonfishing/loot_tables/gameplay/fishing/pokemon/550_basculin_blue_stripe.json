@@ -1,0 +1,65 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:barrier",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{PokemonFishing:{PokemonID:550,Species:\"cobblemon:basculin\",fish_stripes:\"blue\",Max_Level:24}}"
+						},
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Error",
+								"color": "red",
+								"bold": true,
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "Pokémon Fishing Datapack",
+									"color": "gray",
+									"italic": false
+								},
+								{
+									"text": ""
+								},
+								{
+									"text": "Please contact support with",
+									"color": "white",
+									"italic": false
+								},
+								{
+									"text": "the latest error in your log",
+									"color": "white",
+									"italic": false
+								},
+								{
+									"text": ""
+								},
+								{
+									"text": "Data:",
+									"color": "dark_gray",
+									"italic": false
+								},
+								{
+									"text": "550 Basculin Blue Stripe",
+									"color": "dark_gray",
+									"italic": false
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
