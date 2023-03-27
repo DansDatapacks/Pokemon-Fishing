@@ -5,6 +5,14 @@ execute store result score #pokemonfishing:pokemon.id pokemonfishing.temp run da
 execute store result score #pokemonfishing:pokemon.max_level pokemonfishing.temp run data get entity @s Item.tag.PokemonFishing.Max_Level 1
 execute store result score #pokemonfishing:pokemon.min_level pokemonfishing.temp run data get entity @s Item.tag.PokemonFishing.Min_Level 1
 
+# generate random level
+scoreboard players operation #pokemonfishing:rng.input pokemonfishing.temp = #pokemonfishing:pokemon.max_level pokemonfishing.temp
+scoreboard players operation #pokemonfishing:rng.input pokemonfishing.temp -= #pokemonfishing:pokemon.min_level pokemonfishing.temp
+function pokemonfishing:utility/rng
+scoreboard players operation #pokemonfishing:pokemon.level pokemonfishing.temp = #pokemonfishing:rng.output pokemonfishing.temp
+scoreboard players operation #pokemonfishing:pokemon.level pokemonfishing.temp += #pokemonfishing:pokemon.min_level pokemonfishing.temp
+scoreboard players add #pokemonfishing:pokemon.level pokemonfishing.temp 1
+
 # determine shiny chance
 scoreboard players set #pokemonfishing:rng.input pokemonfishing.temp 8192
 function pokemonfishing:utility/rng
@@ -32,3 +40,4 @@ tag @e[type=cobblemon:pokemon,tag=pokemonfishing.pokemon.execute] remove pokemon
 scoreboard players reset #pokemonfishing:pokemon.id pokemonfishing.temp
 scoreboard players reset #pokemonfishing:pokemon.max_level pokemonfishing.temp
 scoreboard players reset #pokemonfishing:pokemon.min_level pokemonfishing.temp
+scoreboard players reset #pokemonfishing:pokemon.level pokemonfishing.temp

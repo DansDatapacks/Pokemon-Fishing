@@ -1,11 +1,3 @@
-# generate random level
-scoreboard players operation #pokemonfishing:rng.input pokemonfishing.temp = #pokemonfishing:pokemon.max_level pokemonfishing.temp
-scoreboard players operation #pokemonfishing:rng.input pokemonfishing.temp -= #pokemonfishing:pokemon.min_level pokemonfishing.temp
-function pokemonfishing:utility/rng
-scoreboard players operation #pokemonfishing:pokemon.level pokemonfishing.temp = #pokemonfishing:rng.output pokemonfishing.temp
-scoreboard players operation #pokemonfishing:pokemon.level pokemonfishing.temp += #pokemonfishing:pokemon.min_level pokemonfishing.temp
-scoreboard players add #pokemonfishing:pokemon.level pokemonfishing.temp 1
-
 # 60 poliwag
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 60 run function pokemonfishing:spawn_pokemon/60_poliwag
 
@@ -77,6 +69,3 @@ execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 550 if d
 
 # 550 basculin red stripe
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 550 if data entity @s {Item:{tag:{PokemonFishing:{fish_stripes:"red"}}}} run function pokemonfishing:spawn_pokemon/550_basculin_red_stripe
-
-# reset temp variables
-scoreboard players reset #pokemonfishing:pokemon.level pokemonfishing.temp
