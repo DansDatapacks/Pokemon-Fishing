@@ -15,7 +15,7 @@ tag @e[type=cobblemon:pokemon,sort=nearest,limit=1] add pokemonfishing.pokemon.e
 data modify entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.pokemon.execute,limit=1] Motion set from entity @s Motion
 
 # delete placeholder item
-kill @s
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 0.. run kill @s
 
 # remove temp tags
 tag @e[type=cobblemon:pokemon,tag=pokemonfishing.pokemon.execute] remove pokemonfishing.pokemon.execute
@@ -23,3 +23,4 @@ tag @e[type=cobblemon:pokemon,tag=pokemonfishing.pokemon.execute] remove pokemon
 # reset temp scores
 scoreboard players reset #pokemonfishing:pokemon.id pokemonfishing.temp
 scoreboard players reset #pokemonfishing:pokemon.max_level pokemonfishing.temp
+scoreboard players reset #pokemonfishing:pokemon.min_level pokemonfishing.temp
