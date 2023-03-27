@@ -5,8 +5,16 @@ execute store result score #pokemonfishing:pokemon.id pokemonfishing.temp run da
 execute store result score #pokemonfishing:pokemon.max_level pokemonfishing.temp run data get entity @s Item.tag.PokemonFishing.Max_Level 1
 execute store result score #pokemonfishing:pokemon.min_level pokemonfishing.temp run data get entity @s Item.tag.PokemonFishing.Min_Level 1
 
+# determine shiny chance
+scoreboard players set #pokemonfishing:rng.input pokemonfishing.temp 8192
+function pokemonfishing:utility/rng
+scoreboard players add #pokemonfishing:rng.output pokemonfishing.temp 1
+
+# spawn shiny pokemon
+execute if score #pokemonfishing:rng.output pokemonfishing.temp matches 8192 run function pokemonfishing:spawn_pokemon_shiny
+
 # spawn pokemon
-function pokemonfishing:spawn_pokemon
+execute unless score #pokemonfishing:rng.output pokemonfishing.temp matches 8192 run function pokemonfishing:spawn_pokemon
 
 # tag pokemon
 tag @e[type=cobblemon:pokemon,sort=nearest,limit=1] add pokemonfishing.pokemon.execute
