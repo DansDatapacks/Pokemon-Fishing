@@ -46,6 +46,8 @@ execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 120 stor
 # 129 magikarp
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 129 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/129_magikarp
 
+# 130 gyarados
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 130 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/130_gyarados
 
 # 147 dratini
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 147 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/147_dratini

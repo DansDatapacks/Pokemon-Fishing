@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"name": "pokemonfishing:gameplay/fishing/pokemon/130_gyrados"
+					"name": "pokemonfishing:gameplay/fishing/pokemon/130_gyarados"
 				},
 				{
 					"type": "minecraft:loot_table",

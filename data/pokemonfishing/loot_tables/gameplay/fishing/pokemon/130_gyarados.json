@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:4150000,PokemonFishing:{PokemonID:130,Species:\"cobblemon:gyrados\",Min_Level:20,Max_Level:60}}"
+							"tag": "{CustomModelData:4150000,PokemonFishing:{PokemonID:130,Species:\"cobblemon:gyarados\",Min_Level:20,Max_Level:60}}"
 						},
 						{
 							"function": "minecraft:set_name",
@@ -51,7 +51,7 @@
 									"italic": false
 								},
 								{
-									"text": "130 Gyrados",
+									"text": "130 Gyarados",
 									"color": "dark_gray",
 									"italic": false
 								}
