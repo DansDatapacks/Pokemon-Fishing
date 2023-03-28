@@ -14,5 +14,19 @@ scoreboard players set #pokemonfishing:rng.input pokemonfishing.temp 0
 function pokemonfishing:utility/rng_init
 scoreboard players operation #pokemonfishing:rng.value pokemonfishing.temp = #pokemonfishing:rng.output pokemonfishing.temp
 
+# set versioning
+scoreboard players set #pokemonfishing:version.major pokemonfishing.data 1
+scoreboard players set #pokemonfishing:version.minor pokemonfishing.data 1
+scoreboard players set #pokemonfishing:version.hotfix pokemonfishing.data 1
+
+# generate name and version message
+data remove storage pokemonfishing:message version
+data modify storage pokemonfishing:message version append value '{"text":"Pokémon Fishing v", "color": "gray"}'
+data modify storage pokemonfishing:message version append value '{"score":{"name":"#pokemonfishing:version.major","objective":"pokemonfishing.data"}, "color": "gray"}'
+data modify storage pokemonfishing:message version append value '{"text":".", "color": "gray"}'
+data modify storage pokemonfishing:message version append value '{"score":{"name":"#pokemonfishing:version.minor","objective":"pokemonfishing.data"}, "color": "gray"}'
+execute if score #pokemonfishing:version.hotfix pokemonfishing.data matches 1.. run data modify storage pokemonfishing:message version append value '{"text":".", "color": "gray"}'
+execute if score #pokemonfishing:version.hotfix pokemonfishing.data matches 1.. run data modify storage pokemonfishing:message version append value '{"score":{"name":"#pokemonfishing:version.hotfix","objective":"pokemonfishing.data"}, "color": "gray"}'
+
 # run loops
 function pokemonfishing:loop/every_10_ticks
