@@ -31,7 +31,7 @@
 				{
 					"type": "minecraft:loot_table",
 					"name": "pokemonfishing:gameplay/fishing/pokemon",
-					"weight": 60
+					"weight": 40
 				}
 			],
 			"rolls": 1.0
