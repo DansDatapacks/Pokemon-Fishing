@@ -18,10 +18,6 @@
 				},
 				{
 					"type": "minecraft:loot_table",
-					"name": "pokemonfishing:gameplay/fishing/pokemon/230_kingdra"
-				},
-				{
-					"type": "minecraft:loot_table",
 					"name": "pokemonfishing:gameplay/fishing/pokemon/319_sharpedo"
 				},
 				{

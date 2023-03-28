@@ -46,9 +46,6 @@ execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 147 run 
 # 148 dragonair
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 148 run function pokemonfishing:spawn_pokemon_shiny/148_dragonair
 
-# 230 kingdra
-execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 230 run function pokemonfishing:spawn_pokemon_shiny/230_kingdra
-
 # 318 carvanha
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 318 run function pokemonfishing:spawn_pokemon_shiny/318_carvanha
 
