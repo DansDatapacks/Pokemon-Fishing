@@ -31,6 +31,10 @@ tag @e[type=cobblemon:pokemon,sort=nearest,limit=1] add pokemonfishing.pokemon.e
 # apply motion
 data modify entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.pokemon.execute,limit=1] Motion set from entity @s Motion
 
+# apply rotation
+execute facing entity @p feet run tp ~ ~ ~
+data modify entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.pokemon.execute,limit=1] Rotation set from entity @s Rotation
+
 # tag as done
 tag @s add pokemonfishing.placeholder.done
 
