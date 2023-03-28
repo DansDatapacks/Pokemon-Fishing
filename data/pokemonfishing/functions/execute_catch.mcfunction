@@ -40,7 +40,7 @@ execute facing entity @p feet run tp ~ ~ ~
 data modify entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.pokemon.execute,limit=1] Rotation set from entity @s Rotation
 
 # tag as done
-tag @s add pokemonfishing.placeholder.done
+tag @s add pokemonfishing.ignore
 
 # delete placeholder item
 execute if score #pokemonfishing:pokemon.spawned pokemonfishing.temp matches 1.. run kill @s
