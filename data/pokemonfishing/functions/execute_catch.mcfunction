@@ -26,7 +26,7 @@ execute if score #pokemonfishing:pokemon.shiny pokemonfishing.temp matches 8192 
 execute unless score #pokemonfishing:pokemon.shiny pokemonfishing.temp matches 8192 run function pokemonfishing:spawn_pokemon
 
 # tag pokemon
-tag @e[type=cobblemon:pokemon,sort=nearest,limit=1] add pokemonfishing.pokemon.execute
+execute if score #pokemonfishing:pokemon.spawned pokemonfishing.temp matches 1.. run tag @e[type=cobblemon:pokemon,tag=!pokemonfishing.ignore,sort=nearest,limit=1] add pokemonfishing.pokemon.execute
 
 # no pokemon found
 execute unless entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.pokemon.execute,limit=1] run scoreboard players reset #pokemonfishing:pokemon.spawned pokemonfishing.temp

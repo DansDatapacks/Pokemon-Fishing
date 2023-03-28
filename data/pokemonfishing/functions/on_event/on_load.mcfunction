@@ -13,3 +13,6 @@ scoreboard players set #pokemonfishing:rng.increment pokemonfishing.data 1013904
 scoreboard players set #pokemonfishing:rng.input pokemonfishing.temp 0
 function pokemonfishing:utility/rng_init
 scoreboard players operation #pokemonfishing:rng.value pokemonfishing.temp = #pokemonfishing:rng.output pokemonfishing.temp
+
+# run loops
+function pokemonfishing:loop/every_10_ticks
