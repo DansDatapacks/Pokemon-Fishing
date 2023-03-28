@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{PokemonFishing:{PokemonID:319,Species:\"cobblemon:sharpedo\",Min_Level:30,Max_Level:50}}"
+							"tag": "{CustomModelData:4150000,PokemonFishing:{PokemonID:319,Species:\"cobblemon:sharpedo\",Min_Level:30,Max_Level:50}}"
 						},
 						{
 							"function": "minecraft:set_name",

@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{PokemonFishing:{PokemonID:550,Species:\"cobblemon:basculin\",fish_stripes:\"red\",Max_Level:24}}"
+							"tag": "{CustomModelData:4150000,PokemonFishing:{PokemonID:550,Species:\"cobblemon:basculin\",fish_stripes:\"red\",Max_Level:24}}"
 						},
 						{
 							"function": "minecraft:set_name",

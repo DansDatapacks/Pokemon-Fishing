@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{PokemonFishing:{PokemonID:117,Species:\"cobblemon:seadra\",Min_Level:32,Max_Level:52}}"
+							"tag": "{CustomModelData:4150000,PokemonFishing:{PokemonID:117,Species:\"cobblemon:seadra\",Min_Level:32,Max_Level:52}}"
 						},
 						{
 							"function": "minecraft:set_name",

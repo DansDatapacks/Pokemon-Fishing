@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{PokemonFishing:{PokemonID:129,Species:\"cobblemon:magikarp\",Max_Level:19}}"
+							"tag": "{CustomModelData:4150000,PokemonFishing:{PokemonID:129,Species:\"cobblemon:magikarp\",Max_Level:19}}"
 						},
 						{
 							"function": "minecraft:set_name",

@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{PokemonFishing:{PokemonID:116,Species:\"cobblemon:horsea\",Max_Level:31}}"
+							"tag": "{CustomModelData:4150000,PokemonFishing:{PokemonID:116,Species:\"cobblemon:horsea\",Max_Level:31}}"
 						},
 						{
 							"function": "minecraft:set_name",

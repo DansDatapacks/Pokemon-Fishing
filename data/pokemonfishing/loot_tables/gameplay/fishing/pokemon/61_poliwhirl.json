@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{PokemonFishing:{PokemonID:61,Species:\"cobblemon:poliwhirl\",Min_Level:25,Max_Level:45}}"
+							"tag": "{CustomModelData:4150000,PokemonFishing:{PokemonID:61,Species:\"cobblemon:poliwhirl\",Min_Level:25,Max_Level:45}}"
 						},
 						{
 							"function": "minecraft:set_name",

@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{PokemonFishing:{PokemonID:148,Species:\"cobblemon:dragonair\",Min_Level:24,Max_Level:54}}"
+							"tag": "{CustomModelData:4150000,PokemonFishing:{PokemonID:148,Species:\"cobblemon:dragonair\",Min_Level:24,Max_Level:54}}"
 						},
 						{
 							"function": "minecraft:set_name",

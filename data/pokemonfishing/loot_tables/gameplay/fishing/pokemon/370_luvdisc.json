@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{PokemonFishing:{PokemonID:370,Species:\"cobblemon:luvdisc\",Max_Level:24}}"
+							"tag": "{CustomModelData:4150000,PokemonFishing:{PokemonID:370,Species:\"cobblemon:luvdisc\",Max_Level:24}}"
 						},
 						{
 							"function": "minecraft:set_name",

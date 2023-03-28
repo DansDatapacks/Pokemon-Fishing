@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{PokemonFishing:{PokemonID:98,Species:\"cobblemon:krabby\",Max_Level:27}}"
+							"tag": "{CustomModelData:4150000,PokemonFishing:{PokemonID:98,Species:\"cobblemon:krabby\",Max_Level:27}}"
 						},
 						{
 							"function": "minecraft:set_name",

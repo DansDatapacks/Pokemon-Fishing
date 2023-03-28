@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{PokemonFishing:{PokemonID:321,Species:\"cobblemon:wailord\",Min_Level:40,Max_Level:70}}"
+							"tag": "{CustomModelData:4150000,PokemonFishing:{PokemonID:321,Species:\"cobblemon:wailord\",Min_Level:40,Max_Level:70}}"
 						},
 						{
 							"function": "minecraft:set_name",
