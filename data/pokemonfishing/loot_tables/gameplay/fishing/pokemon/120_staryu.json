@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{PokemonFishing:{PokemonID:120,Species:\"cobblemon:staryu\"},Max_Level:24}}"
+							"tag": "{PokemonFishing:{PokemonID:120,Species:\"cobblemon:staryu\",Max_Level:24}}"
 						},
 						{
 							"function": "minecraft:set_name",
