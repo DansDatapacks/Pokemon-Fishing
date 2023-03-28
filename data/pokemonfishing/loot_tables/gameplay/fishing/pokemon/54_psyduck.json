@@ -1,0 +1,65 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:barrier",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:4150000,PokemonFishing:{PokemonID:54,Species:\"cobblemon:psyduck\",Max_Level:32}}"
+						},
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Error",
+								"color": "red",
+								"bold": true,
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "Pokémon Fishing Datapack",
+									"color": "gray",
+									"italic": false
+								},
+								{
+									"text": ""
+								},
+								{
+									"text": "Please contact support with",
+									"color": "white",
+									"italic": false
+								},
+								{
+									"text": "the latest error in your log",
+									"color": "white",
+									"italic": false
+								},
+								{
+									"text": ""
+								},
+								{
+									"text": "Data:",
+									"color": "dark_gray",
+									"italic": false
+								},
+								{
+									"text": "54 Psyduck",
+									"color": "dark_gray",
+									"italic": false
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

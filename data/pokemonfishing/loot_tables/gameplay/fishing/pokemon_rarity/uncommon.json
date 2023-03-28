@@ -6,6 +6,10 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon/55_golduck"
+				},
+				{
+					"type": "minecraft:loot_table",
 					"name": "pokemonfishing:gameplay/fishing/pokemon/61_poliwhirl"
 				},
 				{
@@ -15,6 +19,10 @@
 				{
 					"type": "minecraft:loot_table",
 					"name": "pokemonfishing:gameplay/fishing/pokemon/117_seadra"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon/271_lombre"
 				},
 				{
 					"type": "minecraft:loot_table",

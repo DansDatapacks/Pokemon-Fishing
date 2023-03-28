@@ -6,6 +6,10 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon/54_psyduck"
+				},
+				{
+					"type": "minecraft:loot_table",
 					"name": "pokemonfishing:gameplay/fishing/pokemon/60_poliwag"
 				},
 				{
@@ -19,6 +23,10 @@
 				{
 					"type": "minecraft:loot_table",
 					"name": "pokemonfishing:gameplay/fishing/pokemon/120_staryu"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon/270_lotad"
 				},
 				{
 					"type": "minecraft:loot_table",

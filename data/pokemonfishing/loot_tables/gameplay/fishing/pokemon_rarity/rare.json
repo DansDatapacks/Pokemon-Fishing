@@ -6,6 +6,10 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon/7_squirtle"
+				},
+				{
+					"type": "minecraft:loot_table",
 					"name": "pokemonfishing:gameplay/fishing/pokemon/73_tentacruel"
 				},
 				{
@@ -18,11 +22,39 @@
 				},
 				{
 					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon/258_mudkip"
+				},
+				{
+					"type": "minecraft:loot_table",
 					"name": "pokemonfishing:gameplay/fishing/pokemon/319_sharpedo"
 				},
 				{
 					"type": "minecraft:loot_table",
 					"name": "pokemonfishing:gameplay/fishing/pokemon/320_wailmer"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon/393_piplup"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon/501_oshawott"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon/656_froakie"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon/728_popplio"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon/781_dhelmise"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "pokemonfishing:gameplay/fishing/pokemon/816_sobble"
 				}
 			],
 			"rolls": 1.0

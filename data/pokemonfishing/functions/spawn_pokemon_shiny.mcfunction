@@ -1,3 +1,12 @@
+# 7 squirtle
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 7 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/7_squirtle
+
+# 54 psyduck
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 54 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/54_psyduck
+
+# 55 golduck
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 55 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/55_golduck
+
 # 60 poliwag
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 60 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/60_poliwag
 
@@ -37,14 +46,21 @@ execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 120 stor
 # 129 magikarp
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 129 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/129_magikarp
 
-# 130 gyrados
-execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 130 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/130_gyrados
 
 # 147 dratini
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 147 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/147_dratini
 
 # 148 dragonair
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 148 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/148_dragonair
+
+# 258 mudkip
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 148 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/148_dragonair
+
+# 270 lotad
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 270 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/270_lotad
+
+# 271 lombre
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 271 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/271_lombre
 
 # 318 carvanha
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 318 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/318_carvanha
@@ -61,8 +77,26 @@ execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 321 stor
 # 370 luvdisc
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 370 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/370_luvdisc
 
+# 393 piplip
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 393 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/393_piplup
+
+# 501 oshawott
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 501 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/501_oshawott
+
 # 550 basculin blue stripe
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 550 if data entity @s {Item:{tag:{PokemonFishing:{fish_stripes:"blue"}}}} store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/550_basculin_blue_stripe
 
 # 550 basculin red stripe
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 550 if data entity @s {Item:{tag:{PokemonFishing:{fish_stripes:"red"}}}} store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/550_basculin_red_stripe
+
+# 656 froakie
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 656 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/656_froakie
+
+# 728 popplio
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 728 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/728_popplio
+
+# 781 dhelmise
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 781 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/781_dhelmise
+
+# 816 sobble
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 816 store success score #pokemonfishing:pokemon.spawned pokemonfishing.temp run function pokemonfishing:spawn_pokemon_shiny/816_sobble
