@@ -28,6 +28,9 @@ execute unless score #pokemonfishing:pokemon.shiny pokemonfishing.temp matches 8
 # tag pokemon
 tag @e[type=cobblemon:pokemon,sort=nearest,limit=1] add pokemonfishing.pokemon.execute
 
+# no pokemon found
+execute unless entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.pokemon.execute,limit=1] run scoreboard players reset #pokemonfishing:pokemon.spawned pokemonfishing.temp
+
 # apply motion
 data modify entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.pokemon.execute,limit=1] Motion set from entity @s Motion
 
