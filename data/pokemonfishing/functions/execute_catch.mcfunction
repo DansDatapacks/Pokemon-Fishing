@@ -33,6 +33,7 @@ execute unless entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.
 
 # apply motion
 data modify entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.pokemon.execute,limit=1] Motion set from entity @s Motion
+execute store result entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.pokemon.execute,limit=1] Motion[1] double 1.5 run data get entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.pokemon.execute,limit=1] Motion[1] 1
 
 # apply rotation
 execute facing entity @p feet run tp ~ ~ ~
