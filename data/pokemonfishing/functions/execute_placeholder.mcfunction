@@ -32,7 +32,7 @@ execute unless score #pokemonfishing:pokemon.shiny pokemonfishing.temp matches 8
 execute if score #pokemonfishing:pokemon.spawned pokemonfishing.temp matches 1 run function pokemonfishing:find_pokemon
 
 # pokemon failed to spawn
-execute unless score #pokemonfishing:pokemon.spawned pokemonfishing.temp matches 1 run function pokemonfishing:broadcast_error
+execute unless score #pokemonfishing:pokemon.spawned pokemonfishing.temp matches 1 as @a run function pokemonfishing:broadcast_error
 
 # reset temp scores
 scoreboard players reset #pokemonfishing:error_code pokemonfishing.temp
