@@ -17,7 +17,7 @@ scoreboard players operation #pokemonfishing:rng.value pokemonfishing.temp = #po
 # set versioning
 scoreboard players set #pokemonfishing:version.major pokemonfishing.data 1
 scoreboard players set #pokemonfishing:version.minor pokemonfishing.data 1
-scoreboard players set #pokemonfishing:version.hotfix pokemonfishing.data 1
+scoreboard players set #pokemonfishing:version.hotfix pokemonfishing.data 2
 
 # generate name and version message
 data remove storage pokemonfishing:message version
