@@ -56,7 +56,7 @@ execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 147 run 
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 148 run function pokemonfishing:spawn_pokemon/148_dragonair
 
 # 258 mudkip
-execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 148 run function pokemonfishing:spawn_pokemon/148_dragonair
+execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 258 run function pokemonfishing:spawn_pokemon/258_mudkip
 
 # 270 lotad
 execute if score #pokemonfishing:pokemon.id pokemonfishing.temp matches 270 run function pokemonfishing:spawn_pokemon/270_lotad
