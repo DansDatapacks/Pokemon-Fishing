@@ -16,17 +16,29 @@ scoreboard players operation #pokemonfishing:rng.value pokemonfishing.temp = #po
 
 # set versioning
 scoreboard players set #pokemonfishing:version.major pokemonfishing.data 1
-scoreboard players set #pokemonfishing:version.minor pokemonfishing.data 1
-scoreboard players set #pokemonfishing:version.hotfix pokemonfishing.data 2
+scoreboard players set #pokemonfishing:version.minor pokemonfishing.data 2
+scoreboard players set #pokemonfishing:version.hotfix pokemonfishing.data 0
 
-# generate name and version message
+# generate versioning message
 data remove storage pokemonfishing:message version
 data modify storage pokemonfishing:message version append value '{"text":"Pokémon Fishing v", "color": "gray"}'
+
+# major version
 data modify storage pokemonfishing:message version append value '{"score":{"name":"#pokemonfishing:version.major","objective":"pokemonfishing.data"}, "color": "gray"}'
-data modify storage pokemonfishing:message version append value '{"text":".", "color": "gray"}'
-data modify storage pokemonfishing:message version append value '{"score":{"name":"#pokemonfishing:version.minor","objective":"pokemonfishing.data"}, "color": "gray"}'
-execute if score #pokemonfishing:version.hotfix pokemonfishing.data matches 1.. run data modify storage pokemonfishing:message version append value '{"text":".", "color": "gray"}'
-execute if score #pokemonfishing:version.hotfix pokemonfishing.data matches 1.. run data modify storage pokemonfishing:message version append value '{"score":{"name":"#pokemonfishing:version.hotfix","objective":"pokemonfishing.data"}, "color": "gray"}'
+
+# only minor version
+execute unless score #pokemonfishing:version.hotfix pokemonfishing.data matches 1.. if score #pokemonfishing:version.minor pokemonfishing.data matches 1.. run data modify storage pokemonfishing:message version append value '{"text":".", "color": "gray"}'
+execute unless score #pokemonfishing:version.hotfix pokemonfishing.data matches 1.. if score #pokemonfishing:version.minor pokemonfishing.data matches 1.. run data modify storage pokemonfishing:message version append value '{"score":{"name":"#pokemonfishing:version.minor","objective":"pokemonfishing.data"}, "color": "gray"}'
+
+# only hotfix version
+execute unless score #pokemonfishing:version.minor pokemonfishing.data matches 1.. if score #pokemonfishing:version.hotfix pokemonfishing.data matches 1.. run data modify storage pokemonfishing:message version append value '{"text":".0.", "color": "gray"}'
+execute unless score #pokemonfishing:version.minor pokemonfishing.data matches 1.. if score #pokemonfishing:version.hotfix pokemonfishing.data matches 1.. run data modify storage pokemonfishing:message version append value '{"score":{"name":"#pokemonfishing:version.hotfix","objective":"pokemonfishing.data"}, "color": "gray"}'
+
+# minor and hotfix version
+execute if score #pokemonfishing:version.minor pokemonfishing.data matches 1.. if score #pokemonfishing:version.hotfix pokemonfishing.data matches 1.. run data modify storage pokemonfishing:message version append value '{"text":".", "color": "gray"}'
+execute if score #pokemonfishing:version.minor pokemonfishing.data matches 1.. if score #pokemonfishing:version.hotfix pokemonfishing.data matches 1.. run data modify storage pokemonfishing:message version append value '{"score":{"name":"#pokemonfishing:version.minor","objective":"pokemonfishing.data"}, "color": "gray"}'
+execute if score #pokemonfishing:version.minor pokemonfishing.data matches 1.. if score #pokemonfishing:version.hotfix pokemonfishing.data matches 1.. run data modify storage pokemonfishing:message version append value '{"text":".", "color": "gray"}'
+execute if score #pokemonfishing:version.minor pokemonfishing.data matches 1.. if score #pokemonfishing:version.hotfix pokemonfishing.data matches 1.. run data modify storage pokemonfishing:message version append value '{"score":{"name":"#pokemonfishing:version.hotfix","objective":"pokemonfishing.data"}, "color": "gray"}'
 
 # check for fabric server bug
 function pokemonfishing:detect_fabric_server_bug
