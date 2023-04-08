@@ -10,7 +10,8 @@ tag @e[type=cobblemon:pokemon,tag=!pokemonfishing.ignore,sort=nearest,limit=1,di
 execute if entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.pokemon.execute,limit=1] run function pokemonfishing:init_pokemon
 
 # no pokemon found
-execute unless entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.pokemon.execute,limit=1] as @a run function pokemonfishing:broadcast_error
+execute unless entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.pokemon.execute,limit=1] run tag @a add pokemonfishing.broadcast_target
+execute unless entity @e[type=cobblemon:pokemon,sort=nearest,tag=pokemonfishing.pokemon.execute,limit=1] run function pokemonfishing:broadcast_error
 
 # remove temp tags
 tag @e[type=cobblemon:pokemon,tag=pokemonfishing.pokemon.execute] remove pokemonfishing.pokemon.execute

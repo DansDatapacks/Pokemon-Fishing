@@ -1,2 +1,5 @@
 # builds
 *.zip
+
+# macos
+.DS_Store
