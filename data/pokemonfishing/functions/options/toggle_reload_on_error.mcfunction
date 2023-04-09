@@ -1,16 +1,16 @@
 # executes as player
 
 # toggle off
-execute if score #pokemonfishing:option.reload_on_error pokemonfishing.data matches 1.. run scoreboard players set #pokemonfishing.new_option_value pokemonfishing.temp 0
+execute if score #pokemonfishing:option.reload_on_error pokemonfishing.data matches 1.. run scoreboard players set #pokemonfishing:new_option_value pokemonfishing.temp 0
 
 # toggle on
-execute unless score #pokemonfishing:option.reload_on_error pokemonfishing.data matches 1.. run scoreboard players set #pokemonfishing.new_option_value pokemonfishing.temp 1
+execute unless score #pokemonfishing:option.reload_on_error pokemonfishing.data matches 1.. run scoreboard players set #pokemonfishing:new_option_value pokemonfishing.temp 1
 
 # set value
-scoreboard players operation #pokemonfishing:option.reload_on_error pokemonfishing.data = #pokemonfishing.new_option_value pokemonfishing.temp
+scoreboard players operation #pokemonfishing:option.reload_on_error pokemonfishing.data = #pokemonfishing:new_option_value pokemonfishing.temp
 
 # reset temp score
-scoreboard players reset #pokemonfishing.new_option_value pokemonfishing.temp
+scoreboard players reset #pokemonfishing:new_option_value pokemonfishing.temp
 
 # hide admin commands log
 function pokemonfishing:utility/feedback/hide_feedback

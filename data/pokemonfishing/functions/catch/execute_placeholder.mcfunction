@@ -1,4 +1,4 @@
-# executes as placeholder catch item
+# executes as placeholder item
 
 # debug
 scoreboard players set #pokemonfishing:error_code pokemonfishing.temp 1
