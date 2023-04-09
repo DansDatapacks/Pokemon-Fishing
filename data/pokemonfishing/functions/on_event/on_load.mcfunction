@@ -1,4 +1,4 @@
-# runs on every load or reload
+# executes on every load or reload
 
 # meta
 scoreboard objectives add pokemonfishing.data dummy

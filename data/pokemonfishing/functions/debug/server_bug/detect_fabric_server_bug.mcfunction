@@ -1,4 +1,4 @@
-# runs globally
+# executes globally
 
 # reset temp scores
 scoreboard players reset #pokemonfishing:fabric_bug pokemonfishing.temp
