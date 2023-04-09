@@ -1,4 +1,4 @@
-# executes globally, scheduled after a pokemon catch
+# executes globally (scheduled a tick after a pokemon catch in order to be able to find placeholder item)
 
 # find item
 execute as @e[type=item,sort=nearest,tag=!pokemonfishing.placeholder.done] if data entity @s Item.tag.PokemonFishing run tag @s add pokemonfishing.placeholder.found

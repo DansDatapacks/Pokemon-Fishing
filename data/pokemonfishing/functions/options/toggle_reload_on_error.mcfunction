@@ -1,3 +1,5 @@
+# executes as player
+
 # toggle off
 execute if score #pokemonfishing:option.reload_on_error pokemonfishing.data matches 1.. run scoreboard players set #pokemonfishing.new_option_value pokemonfishing.temp 0
 

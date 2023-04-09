@@ -1,3 +1,5 @@
+# executes globally or as placeholder item
+
 # generate error message
 data remove storage pokemonfishing:message error.info
 execute if score #pokemonfishing:error_code pokemonfishing.temp matches 1 run data modify storage pokemonfishing:message error.info append value '{"text":"Failed to spawn Pokémon", "color": "red"}'

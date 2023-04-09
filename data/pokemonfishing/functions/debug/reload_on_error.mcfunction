@@ -1,3 +1,5 @@
+# executes globally
+
 # generate error message
 data remove storage pokemonfishing:message error.info
 data modify storage pokemonfishing:message error.info append value '{"text":"Server bug detected. Running /reload...", "color": "red"}'

@@ -1,4 +1,4 @@
-# create error code
+# executes globally or as placeholder item
 
 # reset
 data remove storage pokemonfishing:message error.code
