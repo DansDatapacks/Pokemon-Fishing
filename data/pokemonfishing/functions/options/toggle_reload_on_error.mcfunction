@@ -11,7 +11,7 @@ scoreboard players operation #pokemonfishing:option.reload_on_error pokemonfishi
 scoreboard players reset #pokemonfishing.new_option_value pokemonfishing.temp
 
 # hide admin commands log
-function pokemonfishing:options/hide_feedback
+function pokemonfishing:utility/feedback/hide_feedback
 
 # notify
 tellraw @s [{"text": "\n"}, {"text": "| ", "color": "dark_gray"}, {"storage":"pokemonfishing:message","nbt":"version[]","interpret":true,"separator":""}]

@@ -7,4 +7,4 @@ scoreboard players reset #pokemonfishing:fabric_bug pokemonfishing.temp
 execute positioned ~ -1000 ~ store success score #pokemonfishing:fabric_bug pokemonfishing.temp run spawnpokemon magikarp
 
 # failed
-execute unless score #pokemonfishing:fabric_bug pokemonfishing.temp matches 1 run function pokemonfishing:warn_fabric_server_bug
+execute unless score #pokemonfishing:fabric_bug pokemonfishing.temp matches 1 run function pokemonfishing:debug/server_bug/warn_fabric_server_bug

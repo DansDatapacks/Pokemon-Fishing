@@ -5,7 +5,7 @@ execute if score #pokemonfishing:error_code pokemonfishing.temp matches 2 run da
 execute if score #pokemonfishing:error_code pokemonfishing.temp matches 3 run data modify storage pokemonfishing:message error.info append value '{"text":"Server bug detected. Run `/reload` in console.", "color": "red"}'
 
 # create error code
-function pokemonfishing:create_error_code
+function pokemonfishing:debug/message/create_error_code
 
 # notify
 tellraw @a[tag=pokemonfishing.broadcast_target] [{"text": "\n"}, {"text": "| ", "color": "dark_gray"}, {"storage":"pokemonfishing:message","nbt":"version[]","interpret":true,"separator":""}]

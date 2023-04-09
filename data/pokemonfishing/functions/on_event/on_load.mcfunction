@@ -41,7 +41,7 @@ execute if score #pokemonfishing:version.minor pokemonfishing.data matches 1.. i
 execute if score #pokemonfishing:version.minor pokemonfishing.data matches 1.. if score #pokemonfishing:version.hotfix pokemonfishing.data matches 1.. run data modify storage pokemonfishing:message version append value '{"score":{"name":"#pokemonfishing:version.hotfix","objective":"pokemonfishing.data"}, "color": "gray"}'
 
 # check for fabric server bug
-function pokemonfishing:detect_fabric_server_bug
+function pokemonfishing:debug/server_bug/detect_fabric_server_bug
 
 # reset on join event
 advancement revoke @a only pokemonfishing:on_join

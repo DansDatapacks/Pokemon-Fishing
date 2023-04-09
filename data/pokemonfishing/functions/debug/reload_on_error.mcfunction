@@ -3,7 +3,7 @@ data remove storage pokemonfishing:message error.info
 data modify storage pokemonfishing:message error.info append value '{"text":"Server bug detected. Running /reload...", "color": "red"}'
 
 # create error code
-function pokemonfishing:create_error_code
+function pokemonfishing:debug/message/create_error_code
 
 # notify
 tellraw @a[tag=pokemonfishing.broadcast_target] [{"text": "\n"}, {"text": "| ", "color": "dark_gray"}, {"storage":"pokemonfishing:message","nbt":"version[]","interpret":true,"separator":""}]
