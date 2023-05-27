@@ -11,13 +11,13 @@ scoreboard players set #pokemonfishing:rng.increment pokemonfishing.data 1013904
 
 # init rng
 scoreboard players set #pokemonfishing:rng.input pokemonfishing.temp 0
-function pokemonfishing:utility/rng_init
+function pokemonfishing:utility/rng/rng_init
 scoreboard players operation #pokemonfishing:rng.value pokemonfishing.temp = #pokemonfishing:rng.output pokemonfishing.temp
 
 # set versioning
 scoreboard players set #pokemonfishing:version.major pokemonfishing.data 1
 scoreboard players set #pokemonfishing:version.minor pokemonfishing.data 1
-scoreboard players set #pokemonfishing:version.hotfix pokemonfishing.data 3
+scoreboard players set #pokemonfishing:version.hotfix pokemonfishing.data 4
 
 # generate versioning message
 data remove storage pokemonfishing:message version
@@ -45,6 +45,9 @@ function pokemonfishing:debug/server_bug/detect_fabric_server_bug
 
 # reset on join event
 advancement revoke @a only pokemonfishing:on_join
+
+# pause loops
+schedule clear pokemonfishing:loop/every_10_ticks
 
 # run loops
 function pokemonfishing:loop/every_10_ticks

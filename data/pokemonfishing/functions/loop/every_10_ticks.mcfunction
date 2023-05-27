@@ -4,4 +4,4 @@
 tag @e[type=cobblemon:pokemon,tag=!pokemonfishing.ignore] add pokemonfishing.ignore
 
 # schedule loop
-schedule function pokemonfishing:loop/every_10_ticks 10t
+schedule function pokemonfishing:loop/every_10_ticks 10t replace
