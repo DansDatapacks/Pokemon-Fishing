@@ -23,6 +23,8 @@
     </a>
 </p>
 
+<br/>
+
 <hr>
 
 <br/>
@@ -78,6 +80,8 @@ How to Install
 <p>
 You must put the downloaded .zip file in BOTH your world's /datapack folder as well as your /resourcepack folder, and enable the resourcepack in-game.
 </p>
+
+<br/>
 
 <hr>
 
