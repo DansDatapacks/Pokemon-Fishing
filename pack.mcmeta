@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 10,
+		"pack_format": 15,
 		"description": [
 			{
 				"text": "v1.1.4",
@@ -11,7 +11,7 @@
 				"color": "dark_gray"
 			},
 			{
-				"text": "MC 1.19.2",
+				"text": "MC 1.20.1",
 				"color": "yellow"
 			},
 			{
@@ -19,7 +19,7 @@
 				"color": "dark_gray"
 			},
 			{
-				"text": "Cobblemon v1.3+",
+				"text": "Cobblemon v1.4+",
 				"color": "light_purple"
 			},
 			{
